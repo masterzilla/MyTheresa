@@ -1,0 +1,11 @@
+{
+    "local": {
+        "baseUrl": "http://localhost:4000/fashionhub/"
+    },
+    "stg": {
+        "baseUrl": "https://staging-env/fashionhub/"
+    },
+    "prod": {
+        "baseUrl": "https://pocketaces2.github.io/fashionhub/"
+    }
+}
