@@ -36,8 +36,7 @@ test('Verify that the Home page is not returning a 40x status code ', async ( {p
     
     // Creating a listeners
     page.on('response', response => {
-        expect.soft(response.status(), 
-        `Response with status ${response.status()} for URL: ${response.url()}`).toBeLessThan(400);
+        expect(response.status()).toBeLessThan(400);
     });
 
     const home = new HomePage(page);
